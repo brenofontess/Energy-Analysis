@@ -1,0 +1,36 @@
+{
+  "generated_at_utc": "2026-11-10T23:42:35.001162+00:00",
+  "tournament_analyzed": {
+    "total_runs": 100,
+    "champion_exp_id": 4
+  },
+  "recommended_hyperparameters": {
+    "max_depth": {
+      "recommended_min": 4,
+      "recommended_max": 7,
+      "optimal_mode": 5
+    },
+    "learning_rate": {
+      "recommended_min": 0.0168,
+      "recommended_max": 0.0571,
+      "optimal_mean": 0.0319
+    },
+    "reg_lambda": {
+      "recommended_min": 3.0,
+      "recommended_max": 7.01,
+      "optimal_mean": 4.72
+    }
+  },
+  "feature_pruning_candidates": [
+    "temp_comfort_delta",
+    "is_holiday_iberian",
+    "is_holiday_pt",
+    "price_spread_lag_24h"
+  ],
+  "architectural_guidance": [
+    "Tighten hyperparameter sampling to depth=[4..6] and learning_rate=[0.025..0.055] for faster convergence.",
+    "Adopt dynamic hourly weights for the Hybrid Blend (80% XGB during solar hours, 65% D-1 persistence during late night).",
+    "Test Huber or quantile loss (reg:pseudohubererror) to capture extreme scarcity spikes without gradient explosion.",
+    "Prune 4 low-importance features (|SHAP| < 0.10 EUR/MWh) to reduce dimensionality."
+  ]
+}

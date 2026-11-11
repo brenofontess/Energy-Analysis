@@ -1,0 +1,193 @@
+{
+  "run_timestamp_utc": "2026-11-10T23:40:05.203953+00:00",
+  "feature_count": 38,
+  "tournament": {
+    "total_experiments": 100,
+    "winning_experiment_id": 4,
+    "winning_exp_id": 4,
+    "winning_name": "Exp_004_High_L2_Regularization",
+    "winning_config": {
+      "max_depth": 5,
+      "learning_rate": 0.03,
+      "subsample": 0.8,
+      "colsample_bytree": 0.75,
+      "reg_alpha": 0.5,
+      "reg_lambda": 5.0,
+      "min_child_weight": 2,
+      "objective": "reg:pseudohubererror",
+      "huber_slope": 10.0,
+      "best_iteration": 137
+    }
+  },
+  "experiments": {
+    "total_experiments": 100,
+    "winning_experiment_id": 4,
+    "winning_exp_id": 4,
+    "winning_name": "Exp_004_High_L2_Regularization",
+    "winning_config": {
+      "max_depth": 5,
+      "learning_rate": 0.03,
+      "subsample": 0.8,
+      "colsample_bytree": 0.75,
+      "reg_alpha": 0.5,
+      "reg_lambda": 5.0,
+      "min_child_weight": 2,
+      "objective": "reg:pseudohubererror",
+      "huber_slope": 10.0,
+      "best_iteration": 137
+    }
+  },
+  "train": {
+    "xgboost": {
+      "mae": 11.92,
+      "mase": 0.632,
+      "rmse": 17.2,
+      "r2": 0.879,
+      "bias": -0.6
+    },
+    "xgboost_best": {
+      "mae": 11.92,
+      "mase": 0.632,
+      "rmse": 17.2,
+      "r2": 0.879,
+      "bias": -0.6
+    },
+    "xgboost_champion": {
+      "mae": 11.92,
+      "mase": 0.632,
+      "rmse": 17.2,
+      "r2": 0.879,
+      "bias": -0.6
+    }
+  },
+  "validation": {
+    "baseline_d1": {
+      "mae": 19.94,
+      "mase": 1.0,
+      "rmse": 28.01,
+      "r2": 0.524,
+      "bias": 0.08
+    },
+    "baseline_d7": {
+      "mae": 26.46,
+      "mase": 1.327,
+      "rmse": 35.33,
+      "r2": 0.243,
+      "bias": 0.1
+    },
+    "ridge": {
+      "mae": 17.36,
+      "mase": 0.871,
+      "rmse": 22.81,
+      "r2": 0.684,
+      "bias": 6.93
+    },
+    "ridge_linear": {
+      "mae": 17.36,
+      "mase": 0.871,
+      "rmse": 22.81,
+      "r2": 0.684,
+      "bias": 6.93
+    },
+    "xgboost": {
+      "mae": 16.29,
+      "mase": 0.817,
+      "rmse": 21.6,
+      "r2": 0.717,
+      "bias": 2.39
+    },
+    "xgboost_best": {
+      "mae": 16.29,
+      "mase": 0.817,
+      "rmse": 21.6,
+      "r2": 0.717,
+      "bias": 2.39
+    },
+    "xgboost_champion": {
+      "mae": 16.29,
+      "mase": 0.817,
+      "rmse": 21.6,
+      "r2": 0.717,
+      "bias": 2.39
+    },
+    "blend": {
+      "mae": 17.01,
+      "mase": 0.853,
+      "rmse": 23.14,
+      "r2": 0.675,
+      "bias": 1.49
+    },
+    "hybrid_blend": {
+      "mae": 17.01,
+      "mase": 0.853,
+      "rmse": 23.14,
+      "r2": 0.675,
+      "bias": 1.49
+    }
+  },
+  "test": {
+    "baseline_d1": {
+      "mae": 18.51,
+      "mase": 1.0,
+      "rmse": 29.03,
+      "r2": 0.813,
+      "bias": -0.25
+    },
+    "baseline_d7": {
+      "mae": 26.75,
+      "mase": 1.445,
+      "rmse": 38.79,
+      "r2": 0.667,
+      "bias": -1.68
+    },
+    "ridge": {
+      "mae": 20.36,
+      "mase": 1.1,
+      "rmse": 26.8,
+      "r2": 0.841,
+      "bias": 11.42
+    },
+    "ridge_linear": {
+      "mae": 20.36,
+      "mase": 1.1,
+      "rmse": 26.8,
+      "r2": 0.841,
+      "bias": 11.42
+    },
+    "xgboost": {
+      "mae": 21.77,
+      "mase": 1.177,
+      "rmse": 29.12,
+      "r2": 0.812,
+      "bias": -0.45
+    },
+    "xgboost_best": {
+      "mae": 21.77,
+      "mase": 1.177,
+      "rmse": 29.12,
+      "r2": 0.812,
+      "bias": -0.45
+    },
+    "xgboost_champion": {
+      "mae": 21.77,
+      "mase": 1.177,
+      "rmse": 29.12,
+      "r2": 0.812,
+      "bias": -0.45
+    },
+    "blend": {
+      "mae": 18.75,
+      "mase": 1.013,
+      "rmse": 25.91,
+      "r2": 0.851,
+      "bias": 0.44
+    },
+    "hybrid_blend": {
+      "mae": 18.75,
+      "mase": 1.013,
+      "rmse": 25.91,
+      "r2": 0.851,
+      "bias": 0.44
+    }
+  }
+}
